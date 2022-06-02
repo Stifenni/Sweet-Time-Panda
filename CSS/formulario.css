@@ -1,0 +1,175 @@
+body{
+    background-color: #fffefb;
+}
+
+/* Principal */
+.ppal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 14vh;
+    flex-wrap: wrap;
+}
+
+/* Formulario */
+
+.formulario{
+    background-color: #775a9a;
+    font-size: 1rem;
+    color: #e3e2f1;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: fit-content;
+    opacity: 0.9;
+    margin: 1rem;
+}
+
+.formInput{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+}
+
+.item{
+    margin: 0.75rem;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-weight: bold;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.validacion{
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    color: #121212;
+    background-color: beige;
+    border: 0.25rem solid beige;
+}
+
+.error{
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+    display: none;
+}
+
+.errorActivo{
+    display:block
+}
+
+.formMensaje{
+    background-color: rgba(209, 65, 65, 0.92);
+    margin: 0.75rem;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.formMensajeActivo{
+    display: block;
+}
+
+#formMsj{
+    margin: 0;
+    padding: 0.25rem;    
+}
+
+#botonEnviar{
+    margin: 0;
+}
+
+.botonEnviar{
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    color: #e3e2f1;
+    background-color: #472f61;
+    border: 0.25rem solid #472f61;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    transform: 0.1s ease all;
+}
+
+.botonEnviar:hover{
+    background-color: #d5bff0;
+    border: 0.25rem solid #d5bff0;
+    box-shadow: 0.5rem 0.5rem 1rem #472f61;
+    color: #472f61;
+}
+
+.enviado{
+    margin: 0;
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.enviadoActivo{
+    display: flex;
+}
+
+/* Validación */
+
+/* Validación correcto */
+.itemValido .validacion{
+    border: 0.25rem solid rgba(57, 202, 108, 0.92);
+}
+
+/* Validación incorrecto */
+.itemError .validacion{
+    border: 0.25rem solid rgba(209, 65, 65, 0.92);
+}
+
+/* Puntos de retiro */
+.ret{
+    margin: 1rem;
+    color: #472f61;
+}
+
+.if{
+    background-color: rgb(236, 191, 180, 0.9);
+    padding: 1rem;
+    margin:1rem;
+    border-radius: 1rem;
+}
+
+h4{
+    margin-top: 0.3rem;
+}
+
+h2{
+    margin:1rem;
+}
+
+/* Media Queries */
+
+/* Escritorio */
+/* Formulario Sticky Escritorio */
+@media only screen and (min-width:954px){
+    .ppal{
+        align-items: flex-start;
+        background-image: url(/Imagenes/Menu/Alfajor/Alfajor.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .formulario{
+        position: sticky;
+        top: 22vh;
+    }
+}
+
+/* Celular */
+@media only screen and (min-width:320px) and (max-width: 666px){  
+    .item{
+        width: 100%;
+    }
+    
+    .formInput{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@700&family=Josefin+Sans:wght@100;300&family=Nunito&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="imagenes/favicon_io/favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/eb2c263d20.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+        <!-- Estilos -->
+    <link rel="stylesheet" href="css/style.css">
+        <!-- Estilo Formulario -->
+    <link rel="stylesheet" href="css/formulario.css">
+    <title>Sweet Time</title>
+</head>
+<body>
+    <!-- Header -->
+    <header id="idheader"></header>
+
+    <!-- Formulario -->
+    <main class="ppal">
+        <div class="formulario">
+            <form name="form" id="formulario" action="#" method="post" class="form">
+                <div class="formInput">
+                    <div class="item" id="nombre">
+                        <label for="name" class="formLabel">Nombre: </label>
+                        <input type="text" name="name" id="name" class="validacion" placeholder="Ingrese su nombre">
+                        <p class="error">*El nombre solo puede contener letras y espacios</p>
+                    </div>
+
+                    <div class="item" id="apellido">
+                        <label for="lasName" class="formLabel">Apellido: </label>
+                        <input type="text" name="lastName" id="lastName" class="validacion" placeholder="Ingrese su apellido">
+                        <p class="error">*El apellido solo puede contener letras y espacios</p>
+                    </div>
+                    
+                    <div class="item" id="telefono">
+                        <label for="tel" class="formLabel">Celular: </label>
+                        <input type="tel" name="tel" id="tel" class="validacion" placeholder="Ingrese un número de celular">
+                        <p class="error">*El celular solo puede contener números y hasta 14 dígitos</p>
+                    </div>
+                    
+                    <div class="item" id="mail">
+                        <label for="email" class="formLabel">E-mail: </label>
+                        <input type="email" name="email" id="email" class="validacion" placeholder="Ingrese su e-mail">
+                        <p class="error">*El e-mail debe tener la siguiente estructura: xxx@aaaa.bb</p>
+                    </div>
+
+                    <div class="item">
+                        <label for="fecha">Fecha de entrega: </label>
+                        <input type="date" name="fecha" class="validacion" id="fecha" placeholder="Ingrese la fecha de entrega estimada">
+                    </div>
+
+                
+                    <div class="item">
+                        <label for="textarea">Cotización: </label>
+                        <textarea name="textarea" class="validacion" id="textarea" cols="18" rows="2" placeholder="Ingrese su consulta"></textarea>
+                    </div>
+                </div>
+
+                <div class="formMensaje" id="formMensaje">
+                    <p id="formMsj">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        <b>Error:</b> Por favor revise los datos ingresados.
+                    </p>
+                </div>
+
+                <div class="item" id="botonEnviar">
+                    <button type="submit" class="botonEnviar" value="Enviar">Enviar</button>
+                    <p class="enviado" id="enviado">Formulario enviado exitosamente!</p>
+                </div>
+                
+            </form>
+        </div>
+        <div class="ret">
+            <h2>&nbsp;Puntos de retiro</h2>
+
+            <div class="if">
+                <h4>Abasto:</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.040053036296!2d-58.41302968477044!3d-34.60314868045964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8c854bd13f%3A0xfc0cf5c054da4aa1!2sAbasto%20Shopping!5e0!3m2!1ses-419!2sar!4v1653489660450!5m2!1ses-419!2sar" width="350wh" height="350vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="if"> 
+                <h4>Barrio Chino:</h4>   
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.6272700855675!2d-58.458058135053804!3d-34.56299151285075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d3ea07df93%3A0x947b5150d5a5bda4!2sBarrio%20Chino%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1653489807839!5m2!1ses-419!2sar" width="350wh" height="350vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>           
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer id="idfooter"></footer>
+
+    <!-- JS -->
+    <script src="JS/javascript.js"></script>
+</body>
+</html>
